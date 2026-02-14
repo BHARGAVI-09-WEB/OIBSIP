@@ -1,9 +1,42 @@
 body {
+    margin: 0;
     font-family: Arial;
     text-align: center;
-    background-color: #f2f2f2;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #42e695);
+    color: white;
+}
+
+.container {
+    padding: 40px;
 }
 
 h1 {
-    color: darkblue;
+    font-size: 42px;
+}
+
+.about {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.box {
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Different colors for each section */
+.skills {
+    background: #ff9a9e;
+}
+
+.projects {
+    background: #fbc2eb;
+}
+
+.contact {
+    background: #43e97b;
 }
