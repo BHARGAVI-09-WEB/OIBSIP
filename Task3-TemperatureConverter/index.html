@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Temperature Converter</title>
+    <title>Colorful Temperature Converter</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: linear-gradient(to right, #ff7eb3, #65d6ce);
+            padding-top: 100px;
+        }
+
+        .box {
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            padding: 30px;
+            width: 320px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px gray;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 10px;
+            width: 85%;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 12px;
+            width: 90%;
+            background: #ff4e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #fc913a;
+        }
+
+        #result {
+            color: white;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Temperature Converter</h2>
+<div class="box">
+    <h2>🌈 Temperature Converter</h2>
 
-<input type="number" id="temp" placeholder="Enter temperature">
+    <input type="number" id="temp" placeholder="Enter temperature">
 
-<select id="unit">
-    <option value="C">Celsius</option>
-    <option value="F">Fahrenheit</option>
-</select>
+    <select id="unit">
+        <option value="C">Celsius → Fahrenheit</option>
+        <option value="F">Fahrenheit → Celsius</option>
+    </select>
 
-<button onclick="convert()">Convert</button>
+    <button onclick="convert()">Convert</button>
 
-<h3 id="result"></h3>
+    <h3 id="result"></h3>
+</div>
 
 <script>
 function convert() {
@@ -27,12 +80,12 @@ function convert() {
     if(unit=="C"){
         res = (t * 9/5) + 32;
         document.getElementById("result").innerText =
-        "Fahrenheit: " + res;
+        res.toFixed(2) + " °F";
     }
     else{
         res = (t - 32) * 5/9;
         document.getElementById("result").innerText =
-        "Celsius: " + res;
+        res.toFixed(2) + " °C";
     }
 }
 </script>
