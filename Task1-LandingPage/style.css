@@ -1,1 +1,63 @@
 
+
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    color: white;
+    padding: 30px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #ff0066;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: #00c9ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #92fe9d;
+}
+
+/* Feature Cards */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: white;
+    padding: 15px;
+}
